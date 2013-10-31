@@ -1,0 +1,392 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #B4D7BF;
+	overflow-y: scroll;
+}
+p#title{
+	text-decoration: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important; 
+	padding-bottom:5px;
+	text-align:center;
+	color:white;
+}
+label#wineSearchLabel {
+	text-decoration: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important; 
+	padding-bottom:5px;
+	text-align:center;
+	color:white;
+	font-size:0.7em;
+}
+div#site {
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+}
+div#wrapper {
+	padding: 70px 0 40px 0;
+	line-height: 18px;
+}
+div#app {
+	border: 1px solid #7da7b4;
+	padding: 0 20px 0 20px;
+	width: 940px;
+	background: #fff;
+	margin: 0 auto 0 auto;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+	zoom: 1;
+}
+div#app.home {
+	padding: 0 20px 80px 20px !important;
+	margin-bottom: 150px;
+}
+
+#headerTabs, #rightHeader {
+	line-height: 44px;
+	padding-left: 22px;
+}
+div#header {
+	text-align:center;
+	color:black;
+	font-size: 24px;
+	padding: 0 18px;
+	height: 70px;
+	background: 0;
+	background-color: #333;
+}
+div#align {
+	max-width: 1130px;
+	min-width: 750px;
+	margin: auto;
+	padding: 13px 0 0 0;
+	font:13px/1.231 "Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: left;
+}
+div#homeLogo {
+	margin: 0;
+	padding: 0;
+}
+div.clear {
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+}
+#logo {
+	box-shadow: none;
+	background: 0;
+	float: left;
+}
+#logo img {
+	height: 43px;
+	width: 187px;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+div#headerTabs {
+	position: relative;
+	line-height: 44px;
+	padding-left: 22px;
+	float:left;
+	text-align: left;
+	color: #333;
+}
+#headerTabs a{
+	display: inline-block;
+	color: #ccc;
+	font-size: 16px;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-weight: 500;
+	padding: 0 1px 0 0;
+	margin: 0 18px 0 0;
+	text-decoration: none;
+	text-shadow: 0 1px 1px #000;
+	outline: 0;
+}
+div#rightHeader {
+	line-height: 44px;
+	padding-left: 22px;
+	font-size: 12px;
+	height: 44px;
+	text-align: right;
+	white-space: nowrap;
+	text-shadow: none;
+	margin: 0;
+	padding: 0;
+	color: #cdcdcd;
+	text-decoration: none;
+}
+.rightHeaderItem {
+	display: inline-block;
+	height: 60px;
+	zoom: 1;
+	line-height: 44px;
+	font-size: 12px;
+	line-height: 44px;
+	text-align: right;
+	white-space: nowrap;
+	text-shadow: none;
+}
+#rightHeader .rightHeaderItem > a {
+	display: inline-block;
+	color: #ccc;
+	font-size: 16px;
+	font-family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-weight: 500;
+	padding: 0 1px 0 0;
+	margin: 0 18px 0 0;
+	text-decoration: none;
+	text-shadow: 0 1px 1px #000;
+	outline: 0;
+	cursor: pointer;
+	text-align: right;
+	white-space: nowrap;
+}
+footer.main {
+	clear: both;
+	font-size: 12px;
+	height: 3em;
+	position: relative;
+	margin: 90px 0 0;
+	width: 100%;
+	color: #9eb9c5;
+	border-top: 1px solid black;
+}
+footer.main>.inner {
+	height: 40px;
+	width: 940px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+}
+footer.main>.inner>ul {
+	padding: 12px 0 0 0;
+	margin: 0 0 0 20px;
+	display: inline-block;
+}
+footer.main>.inner>ul>li {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	line-height: 18px;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	font-family: inherit;
+}
+footer.main>.inner>ul>li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: inherit;
+}
+div#searchDiv {
+	padding:20px;
+}
+div#editWineDiv {
+	text-align: center;
+}
+
+fieldset {
+	width: 80%;
+	margin: 50px auto;
+	background: #FFFFFF;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-box-shadow: 10px 10px 20px rgba(0,0,0,0.65);
+}
+legend.clickableLegend {
+	border: 1px solid black;
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size: 1.2em;
+	color: #FFF;
+	text-shadow: 3px 3px 3px #000000;
+	background: -webkit-gradient(radial, center center, 0, center center, 150, from(#669999), to(#000099));
+	-webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+	cursor:pointer
+}
+p#wineSubmit{
+	text-align:center;
+}
+input#submit, input#searchButton{
+	padding: 1px 10px;
+}
+ul#navButtonList { 
+	list-style: none; 
+}
+#navButtonList * {
+	padding: 0; 
+	margin: 0; 
+}
+#navButtonList ul {
+	display:inline;
+}
+#navButtonList ul.nav-ul li.headlink {
+	width: 200px; 
+	display:inline;
+	margin-left: 5px; 
+	border: 1px black solid; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+    background: -o-linear-gradient(top, #3e779d, #65a9d7);
+	padding: 3.5px 7px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+	text-align: center; 
+	font-size:1em;
+	background: #D0D2C4;
+}
+#navButtonList ul.home-ul {
+	position:relative;
+	width: 25%;
+	float:left;
+}
+#navButtonList ul.home-ul li.home  img{
+	width: 40px;
+	height: 40px;
+}
+#navButtonList ul.home-ul li.home {
+	display:inline;
+	position:relative;
+		float:left;
+	height:100%;
+	
+}
+#navButtonList li.headlink a {
+	font-size:0.7em;
+	text-decoration: none;
+	color:#808069;
+}
+#navButtonList li.headlink a:hover {
+	color: #802A2A;
+}
+#navButtonList li.headlink a:active {
+	color:#00FF00;
+}
+a.wineAnchor:link    { 
+	color:white; 
+	background:#BAA378;
+	margin: 0px 5px 0px 5px;
+	padding: 2px 15px 2px 15px;
+	text-decoration:none; 
+	display:inline;
+	border-radius: 4px;
+	font-size:0.7em;
+}
+a.wineAnchor:visited { 
+	color:white;
+	text-decoration:none;
+}
+a.wineAnchor:hover   { 
+	color:#2C2416; 
+	text-decoration:none;  
+}
+a.wineAnchor:active  { 
+	color:red;
+	text-decoration:none; 
+}  
+#resultTable{
+	background-color: white;
+	-webkit-border-radius: 10px;
+	width: 100%;
+	padding: 10px;
+	padding-bottom:25px;
+}
+#resultTable th.sortable {
+	color: #666;
+	cursor: pointer;
+	text-decoration: underline;
+}
+#resultTable th.sortable:hover { 
+	color: black;
+}
+#resultTable th.sorted-asc, #resultTable th.sorted-desc  { 
+	color: black;
+}
+#resultTable td {
+	background-color: white;
+	text-align:center;
+}
+#resultTable td a{
+	text-decoration: none;
+	color:#5F0F21;
+	font-family: "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important; 
+}
+#resultTable td.odd {
+	background-color: #666;
+	color: white;
+}
+#resultTable td.hovered {
+	background-color: lightblue;
+	color: #666;
+}
+#searchBar {
+	color:black;
+	font-size: 20px;
+	font-family: Georgia, serif;
+	padding-left:5px;
+}
+form#editWineForm ul li {
+	list-style-type: none;
+	margin: 10px;
+}
+span.mandatory {
+	color:red;
+}
+p.fieldReq {
+	text-align:center;
+	font-style:italic;
+}
+.newWineInput{
+	font:0.8em, Verdana;
+	padding: 4px;
+}
+ul.result {
+	list-style:none;
+}
+ul.result li {
+	padding:2px;
+	border: 1px solid black;
+	border-top: 0;
+	cursor: pointer;
+	text-align:center;
+}
+.result li:hover {
+	background: black;
+	color: white;
+}
+.wineLabel {
+	padding-right:100px;
+	font-size: 80%;
+	color:#666666;
+}
+p.newWineInputPar{
+	margin: 15px;
+	padding-left: 20px;
+}
+#headerSearch {
+	margin-right:100px;
+	width:30%;
+}

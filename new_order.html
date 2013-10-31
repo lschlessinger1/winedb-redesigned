@@ -1,0 +1,85 @@
+<fieldset>			
+	<legend class="clickableLegend">Order Input</legend>
+		<form id="newOrderForm" method="POST" action="orders_create.php" class="blindableForm" name="new_order_form" onsubmit="checkForm(5)">
+			<p class="fieldReq">Fields that must be completed are marked with a red asterisk (<span class="mandatory">*</span>).</p>
+			<table class="enterOrderFormTable">
+				<tbody>
+					<tr>
+						<td class="enterOrderFieldLabel" style="vertical-align:middle;">
+							<span>
+								<label class="orderLabel" for="get_wine_id">
+									<span class="mandatory">*&nbsp;</span>
+									<b>Wine:&nbsp;</b>
+								</label>
+								<br />
+								<span class="tiny"></span>
+							<span>
+						</td>
+						<td>
+							<span>
+								<select id="wineId" type="text" class="newOrderInput" name="get_wine_id" required>
+								<?php
+									while($row = mysql_fetch_array($wines)){
+										print("<option value=".$row["id"].">".$row['color']." ".$row["vintage"]." ".$row['grape_varietal']." ".$row['wine_maker_or_vineyard']."</option>");
+									} 
+								?>
+								</select>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="enterOrderFieldLabel" style="vertical-align:middle;">
+							<span>
+								<label class="orderLabel" for="new_estimated_arrival">
+									<span class="notMandatory"></span>
+									<b>Estimated Arrival:&nbsp;</b>
+								</label>
+							<span>
+						</td>
+						<td>
+							<span>
+								<input id="estimatedArrival" type="text" class="newOrderInput" name="new_estimated_arrival" />
+							</span>
+							<br />
+							<span class="tiny"></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="enterOrderFieldLabel" style="vertical-align:middle;">
+							<span>
+								<label class="orderLabel" for="new_quantity">
+									<span class="mandatory">*&nbsp;</span>
+									<b>Quantity:&nbsp;</b>
+								</label>
+							<span>
+						</td>
+						<td>
+							<span>
+								<input id="orderQuantity" type="text" class="newOrderInput" name="new_quantity" min="1" required/>
+							</span>
+							<br />
+							<span class="tiny"></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="enterOrderFieldLabel" style="vertical-align:middle;">
+							<span>
+								<label class="orderLabel" for="new_order_comments">
+									<span class="notMandatory"></span>
+									<b>Comments:&nbsp;</b>
+								</label>
+							<span>
+						</td>
+						<td>
+							<span>
+								<textarea id="orderComments" type="text" class="newOrderInput" name="new_order_comments" rows="4" maxlength="140"></textarea>
+							</span>
+							<br />
+							<span class="tiny"></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<p id="orderSubmit"><input id="submit" value="Create" type="submit"/></p>	
+	</form>
+</fieldset>

@@ -1,0 +1,3 @@
+[23-Jun-2013 09:54:47] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'lschlessinger'@'localhost' (using password: YES) in /home3/lou/public_html/passwordprotected/winedb/get_db.php on line 5
+[23-Jun-2013 09:55:45] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'lou'@'localhost' (using password: YES) in /home3/lou/public_html/passwordprotected/winedb/get_db.php on line 5
+[23-Jun-2013 09:57:50] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'lou'@'localhost' (using password: YES) in /home3/lou/public_html/passwordprotected/winedb/get_db.php on line 5

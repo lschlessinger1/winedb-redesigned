@@ -1,0 +1,12 @@
+this will just be a heatmap of the wine locations.
+i will use google's API with XML to see where in the world the wines were purchased and made
+
+other ideas:
+maybe filter the heatmap by country or something like it
+could calculate interesting stuff like where a user buys the most wines
+if a user has multiple homes, they could track where the specific bottles are in the world
+
+questions:
+will I need to put lat and lon for locations table
+how much info will wine.com API give me?
+what will it be a heatmap of, wine_make_or_vineyard , country, region etc.? Or can the user select these options?
